@@ -6,3 +6,14 @@ h1{
     font-style: oblique;
     
 }
+
+
+#image-container{
+    height: 500px;
+    width: 300px;
+    margin: 0 auto;
+background: #CCCCCC;
+display: flex;
+align-items: center;
+justify-content: center;
+}
