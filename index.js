@@ -1,3 +1,4 @@
+//sliding image
 var images = [
     "heels.jpeg",
     "orange.jpeg",
@@ -12,4 +13,19 @@ setInterval(function() {
       if (i == images.length) {
         i =  0;
       }
-}, 3000);
+}, 2000);
+
+//text color
+var colors = ["blue", "pink", "black"]
+var currentColor = 0
+var textColor = document.getElementsByTagName("h1")
+
+function changeColor() {
+  --currentColor
+  if (currentColor < 0) currentColor = colors.length -1
+  for (var i = 0; i < textColor.length; i++) {
+    textColor[i].style.color = colors[(currentColor +i) % colors.length]
+  }
+}
+
+setInterval(changeColor, 2000)
