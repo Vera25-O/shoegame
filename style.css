@@ -12,8 +12,9 @@ h1{
     height: 500px;
     width: 300px;
     margin: 0 auto;
-background: #CCCCCC;
+background: white;
 display: flex;
 align-items: center;
 justify-content: center;
+opacity: 0.6;
 }
