@@ -8,14 +8,18 @@ h1{
 }
 
 
+h2{
+
+    margin-top: 370px;
+    margin-left: -140px;
+}
+
 #container{
     height: 500px;
     width: 300px;
     margin: 0 auto;
 background: white;
 display: flex;
-align-items: center;
-justify-content: center;
 opacity: 0.9;
 }
 
@@ -23,6 +27,51 @@ opacity: 0.9;
 /*card*/
 .card{
     height: 300px;
-    width: auto;
-    
+    margin-top: 10px;
+    margin-left: 30px;
 }
+
+.like{
+    margin-top: 190px;
+    margin-left: -140px;
+}
+
+
+.like-button {
+    animation-fill-mode:backwards;
+    color:gold;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    transition: color 300ms;
+    cursor: pointer;
+    margin-top: 190px;
+  }
+  
+  .like-button:hover {
+    color:goldenrod;
+  }
+  
+  .like-button:active {
+    color: goldenrod;
+  }
+  
+  .like-button:focus {
+    outline: none;
+  }
+
+
+
+
+  .likes-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .likes {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  

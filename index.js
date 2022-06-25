@@ -1,4 +1,4 @@
-let imgName = document.getElementById('card-title')
+let imgName = document.getElementById('image-name')
 let imgSrc = document.getElementById('card-image')
 let imgLikesCount = document.getElementById('like-count')
 // let imgCommentList = document.getElementById('comments-list')
@@ -24,9 +24,19 @@ function renderImageAndDetails(imageDetails){
 
 
 
+//play
 
+// data.products['Nissan'][0].model   // Sentra
+// data.products['Nissan'][1].model   // Maxima
+// data.products['Nissan'][2].doors   // 2
 
-
+// for (var make in data.cars) {
+//     for (var i = 0; i < data.cars[make].length; i++) {
+//         var model = data.cars[make][i].model;
+//         var doors = data.cars[make][i].doors;
+//         alert(make + ', ' + model + ', ' + doors);
+//     }
+// }
 
 
 
