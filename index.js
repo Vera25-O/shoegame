@@ -24,22 +24,6 @@ function renderImageAndDetails(imageDetails){
 
 
 
-//play
-
-// data.products['Nissan'][0].model   // Sentra
-// data.products['Nissan'][1].model   // Maxima
-// data.products['Nissan'][2].doors   // 2
-
-// for (var make in data.cars) {
-//     for (var i = 0; i < data.cars[make].length; i++) {
-//         var model = data.cars[make][i].model;
-//         var doors = data.cars[make][i].doors;
-//         alert(make + ', ' + model + ', ' + doors);
-//     }
-// }
-
-
-
 
 
 
@@ -65,7 +49,7 @@ setInterval(function() {
 }, 2000);
 
 //text color
-var colors = ["blue", "pink", "black"]
+var colors = ["white", "pink", "black"]
 var currentColor = 0
 var textColor = document.getElementsByTagName("h1")
 
