@@ -1,8 +1,3 @@
-let imgName = document.getElementById('image-name')
-let imgSrc = document.getElementById('card-image')
-let imgLikesCount = document.getElementById('like-count')
-// let imgCommentList = document.getElementById('comments-list')
-//Getting the image, title and the comments (GET METHOD)
 
 function displayImageAndDetails(){
     const imageDetails = fetch (" http://localhost:3000/shoes/1")
@@ -12,6 +7,15 @@ function displayImageAndDetails(){
 }
 displayImageAndDetails()
 
+let imgName = document.getElementById('image-name')
+let imgSrc = document.getElementById('card-image')
+let imgLikesCount = document.getElementById('like-count')
+// let imgCommentList = document.getElementById('comments-list')
+//Getting the image, title and the comments (GET METHOD)
+
+
+
+
 function renderImageAndDetails(imageDetails){
   imgName.textContent = imageDetails.name;
   imgSrc.src = imageDetails.image;
@@ -20,6 +24,41 @@ function renderImageAndDetails(imageDetails){
 
   
 }
+
+
+
+
+
+
+// like button 
+const toggleHeart = () => {
+  const likeButton = document.querySelector("#like-button")
+    
+  likeButton.addEventListener("click", (event)  =>{
+ if(likeButton.textContent === "♥"){
+    likeButton.textContent = "♡"
+ } else {
+    likeButton.textContent = "♥";
+    likeCounter();
+ }
+ })
+}
+
+let n=0
+const likeCounter = () => {
+ const   likeCount = document.querySelector("#like-count");
+ n++;
+ likeCount.textContent = `${n} likes`
+}
+
+toggleHeart();
+
+
+
+
+
+
+
 
 
 
