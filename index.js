@@ -116,12 +116,67 @@ if(document.readyState === "loading") {
 
 
 //POSTBUTTON
-const myForm = document.getElementById("myForm");
+// const myForm = document.getElementById("myForm");
 
-myForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-console.log("submitted")
-});
+// myForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+// console.log("submitted")
+// });
+
+const ul = document.querySelector('#comments');
+const commentSection = ()=>{
+    fetch("http://localhost:3000/shoes")
+    .then((response)=>response.json())
+    .then((data)=>fetchComments(data))
+}
+
+const fetchComments = (information)=>{
+    information.forEach((element)=>{
+        const li = document.createElement('li');
+        li.textContent = `${element.content}`;
+        ul.appendChild(li);
+        removeComments(li,element.id);
+    })
+}
+
+commentSection();
+
+const addComments = ()=>{
+    const form = document.querySelector('#myform');
+    const inputBar = document.querySelector('.input');
+    form.addEventListener('submit',(event)=>{
+        event.preventDefault();
+        const li = document.createElement('li');
+        li.textContent = inputBar.value;
+        ul.appendChild(li);
+        postComments(inputBar.value);
+        removeComments(li);
+    })
+}
+
+addComments()
+
+// 
+
+
+const removeComments = (listItem,item)=>{
+    listItem.addEventListener('click',(event)=>{
+        listItem.remove();
+        deleteComments(item);
+    })
+}
+
+const deleteComments = (itemToDelete)=>{
+    fetch(`http://localhost:3000/shoes/${itemToDelete}`,{
+        method:'DELETE'
+    })
+}
+
+  
+
+
+
+
 
 
 
