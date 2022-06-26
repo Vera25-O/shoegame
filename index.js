@@ -10,8 +10,6 @@ displayImageAndDetails()
 let imgName = document.getElementById('image-name')
 let imgSrc = document.getElementById('card-image')
 let imgLikesCount = document.getElementById('like-count')
-// let imgCommentList = document.getElementById('comments-list')
-//Getting the image, title and the comments (GET METHOD)
 
 
 
@@ -21,16 +19,16 @@ function renderImageAndDetails(imageDetails){
   imgSrc.src = imageDetails.image;
   imgLikesCount.textContent =`${imageDetails.likes} likes`;
  
-  for (i=0; i<imageDetails.length; i++){
-    document.write(
-        imageDetails.image + "<br />"
-    );
-  }
+
   
 }
 
 
-
+if(document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded",dom)
+} else{
+  dom();
+}
 
 
 
@@ -106,71 +104,5 @@ function changeColor() {
 }
 
 setInterval(changeColor, 2000)
-
-if(document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded",dom)
-} else{
-  dom();
-}
-
-
-
-//POSTBUTTON
-const myForm = document.getElementById("myForm");
-
-myForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-console.log("submitted")
-});
-
-const ul = document.querySelector('#comments-list');
-const commentSection = ()=>{
-    fetch("http://localhost:3000/comments")
-    .then((response)=>response.json())
-    .then((data)=>fetchComments(data))
-}
-
-const fetchComments = (information)=>{
-    information.forEach((element)=>{
-        const li = document.createElement('li');
-        li.textContent = `${element.content}`;
-        ul.appendChild(li);
-        removeComments(li,element.id);
-    })
-}
-
-commentSection();
-
-const addComments = ()=>{
-  const form = document.querySelector('#comment-form');
-  const inputBar = document.querySelector('.comment-input');
-  form.addEventListener('submit',(event)=>{
-      event.preventDefault();
-      const li = document.createElement('li');
-      li.textContent = inputBar.value;
-      ul.appendChild(li);
-      postComments(inputBar.value);
-      removeComments(li);
-  })
-}
-
-
-
-const postComments = (comment)=>{
-  fetch("http://localhost:3000/shoes",{
-      method:'POST',
-      headers:{
-          'Content-Type':'application/json',
-      },
-      body:JSON.stringify({
-          "imageId": 1,
-          "content":`${comment}`
-      })
-  })
-}
-
-
-
-
 
 
