@@ -10,8 +10,6 @@ displayImageAndDetails()
 let imgName = document.getElementById('image-name')
 let imgSrc = document.getElementById('card-image')
 let imgLikesCount = document.getElementById('like-count')
-// let imgCommentList = document.getElementById('comments-list')
-//Getting the image, title and the comments (GET METHOD)
 
 
 

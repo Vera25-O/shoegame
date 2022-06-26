@@ -14,8 +14,6 @@ h2{
     margin-left: -140px;
 }
 
-
-/*div containing the image and details*/
 #container{
     height: 500px;
     width: 300px;
@@ -26,15 +24,13 @@ opacity: 0.9;
 }
 
 
-/*card- image*/
+/*card*/
 .card{
     height: 300px;
     margin-top: 10px;
     margin-left: 30px;
 }
 
-
-/*likesection*/
 .like{
     margin-top: 190px;
     margin-left: -140px;
@@ -77,5 +73,9 @@ opacity: 0.9;
   .likes {
     font-size: 0.9rem;
     font-weight: 600;
+  }
+
+  .myForm{
+    margin-top: 380px;
   }
   
