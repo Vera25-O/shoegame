@@ -3,68 +3,68 @@
     {
       "id": 1,
       "name": "Heels",
-      "image": "heels.jpeg",
+      "image": "images/heels.jpeg",
       "likes": 0,
       "comment": "Latest"
     },
     {
       "id": 2,
       "name": "Nikey Grind",
-      "image": "girshoe.jpeg",
+      "image": "images/girshoe.jpeg",
       "likes": 0,
       "comment": "Latest"
     },
     {
       "id": 3,
       "name": "Glowing Js",
-      "image": "glowy.jpeg",
+      "image": "images/glowy.jpeg",
       "likes": 0,
       "comment": "Latest"
     },
     {
       "id": 4,
       "name": "Pink Js",
-      "image": "pinky.jpeg",
+      "image": "images/pinky.jpeg",
       "likes": 0,
       "comment": "Latest"
     },
     {
       "id": 5,
       "name": "Puma Grind",
-      "image": "boyshoe.jpeg",
+      "image": "images/boyshoe.jpeg",
       "likes": 0
     },
     {
       "id": 6,
       "name": "Black Puma",
-      "image": "puma.jpeg",
+      "image": "images/puma.jpeg",
       "likes": 0
     },
     {
       "id": 7,
       "name": "AirForce",
-      "image": "air.jpeg",
+      "image": "images/air.jpeg",
       "likes": 0,
       "comment": "Latest"
     },
     {
       "id": 8,
       "name": "Blue Js",
-      "image": "blue.jpeg",
+      "image": "images/blue.jpeg",
       "likes": 0,
       "comment": "Latest"
     },
     {
       "id": 9,
       "name": "Green Js",
-      "image": "green.jpeg",
+      "image": "images/green.jpeg",
       "likes": 0,
       "comment": "Latest"
     },
     {
       "id": 10,
       "name": "Orange Js",
-      "image": "orange.jpeg",
+      "image": "images/orange.jpeg",
       "likes": 0,
       "comment": "Latest"
     }
