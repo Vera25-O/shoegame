@@ -1,6 +1,46 @@
 {
   "shoes": [
     {
+      "id": 1,
+      "name": "Heels",
+      "image": "heels.jpeg",
+      "likes": 0,
+      "comment": "Latest"
+    },
+    {
+      "id": 2,
+      "name": "Nikey Grind",
+      "image": "girshoe.jpeg",
+      "likes": 0,
+      "comment": "Latest"
+    },
+    {
+      "id": 3,
+      "name": "Glowing Js",
+      "image": "glowy.jpeg",
+      "likes": 0,
+      "comment": "Latest"
+    },
+    {
+      "id": 4,
+      "name": "Pink Js",
+      "image": "pinky.jpeg",
+      "likes": 0,
+      "comment": "Latest"
+    },
+    {
+      "id": 5,
+      "name": "Puma Grind",
+      "image": "boyshoe.jpeg",
+      "likes": 0
+    },
+    {
+      "id": 6,
+      "name": "Black Puma",
+      "image": "puma.jpeg",
+      "likes": 0
+    },
+    {
       "id": 7,
       "name": "AirForce",
       "image": "air.jpeg",
