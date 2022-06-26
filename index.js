@@ -98,3 +98,11 @@ if (document.readyState === "loading") {
 } else {
   dom();
 }
+
+
+//comment
+const myForm = document.getElementById("myForm")
+  myForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+console.log("submitted comment");
+  });
