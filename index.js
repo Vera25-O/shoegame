@@ -1,6 +1,6 @@
 
 function displayImageAndDetails(){
-    const imageDetails = fetch (" http://localhost:3000/shoes/1")
+    const imageDetails = fetch (" http://localhost:3000/shoes/2")
     .then(resp => resp.json())
     .then(data => renderImageAndDetails(data))
     return imageDetails
@@ -125,7 +125,7 @@ if(document.readyState === "loading") {
 
 const ul = document.querySelector('#comments');
 const commentSection = ()=>{
-    fetch("http://localhost:3000/shoes")
+    fetch("http://localhost:3000/")
     .then((response)=>response.json())
     .then((data)=>fetchComments(data))
 }
@@ -167,7 +167,7 @@ const removeComments = (listItem,item)=>{
 }
 
 const deleteComments = (itemToDelete)=>{
-    fetch(`http://localhost:3000/shoes/${itemToDelete}`,{
+    fetch(`http://localhost:3000//${itemToDelete}`,{
         method:'DELETE'
     })
 }
