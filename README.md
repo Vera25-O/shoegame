@@ -1,4 +1,4 @@
-#shoegame
+#shoegame < br>
 []The Shoegame project is an app where a trending shoe is posted and users get to like if they really think its amazing
 Users are also able to give their views through the comment section.
 The whole project is made of html,css and java script.
