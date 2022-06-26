@@ -19,7 +19,7 @@ Then open the html file through the live server extension
 #live link
 
 
-https://vera25-o.github.io/vera3/
+https://vera25-o.github.io/shoegame/
 
 
 #Support
