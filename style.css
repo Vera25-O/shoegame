@@ -84,10 +84,10 @@ opacity: 0.9;
     color:black;
     width: 150px;
     height: 40px;
-    margin-left: -30px;
+    margin-left: -50px;
 align-items: center;
 border-radius: 10px;
-cursor: grab;
+cursor: pointer;
 
 }
 .post:hover{
