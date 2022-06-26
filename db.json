@@ -1,9 +1,9 @@
 {
   "shoes": [
     {
-      "id": 1,
-      "name": "Heels",
-      "image": "heels.jpeg",
+      "id":[ 1],
+      "name": ["Heels"],
+      "image": ["heels.jpeg"],
       "likes": 0,
       "comment": "Latest"
     },

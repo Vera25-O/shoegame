@@ -21,7 +21,11 @@ function renderImageAndDetails(imageDetails){
   imgSrc.src = imageDetails.image;
   imgLikesCount.textContent =`${imageDetails.likes} likes`;
  
-
+  for (i=0; i<imageDetails.length; i++){
+    document.write(
+        imageDetails.image + "<br />"
+    );
+  }
   
 }
 
@@ -31,6 +35,7 @@ function renderImageAndDetails(imageDetails){
 
 
 // like button 
+function dom(){
 const toggleHeart = () => {
   const likeButton = document.querySelector("#like-button")
     
@@ -53,7 +58,7 @@ const likeCounter = () => {
 
 toggleHeart();
 
-
+}
 
 
 
@@ -101,5 +106,25 @@ function changeColor() {
 }
 
 setInterval(changeColor, 2000)
+
+if(document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded",dom)
+} else{
+  dom();
+}
+
+
+
+//POSTBUTTON
+const myForm = document.getElementById("myForm");
+
+myForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+console.log("submitted")
+});
+
+
+
+
 
 
