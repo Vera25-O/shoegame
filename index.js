@@ -10,6 +10,8 @@ displayImageAndDetails()
 let imgName = document.getElementById('image-name')
 let imgSrc = document.getElementById('card-image')
 let imgLikesCount = document.getElementById('like-count')
+// let imgCommentList = document.getElementById('comments-list')
+//Getting the image, title and the comments (GET METHOD)
 
 
 
@@ -54,11 +56,7 @@ toggleHeart();
 
 }
 
-if(document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded",dom)
-} else{
-  dom();
-}
+
 
 
 
@@ -105,4 +103,8 @@ function changeColor() {
 
 setInterval(changeColor, 2000)
 
-
+if(document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded",dom)
+} else{
+  dom();
+}
