@@ -79,3 +79,19 @@ opacity: 0.9;
     margin-top: 380px;
   }
   
+  .post{
+    background-color: gold;
+    color:black;
+    width: 150px;
+    height: 40px;
+align-items: center;
+border-radius: 10px;
+cursor: grab;
+
+}
+.post:hover{
+    filter: opacity(0.7);
+}
+.post:active{
+    transform: translate(0,0.3rem);
+}
