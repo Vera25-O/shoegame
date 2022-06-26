@@ -24,11 +24,7 @@ function renderImageAndDetails(imageDetails){
 }
 
 
-if(document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded",dom)
-} else{
-  dom();
-}
+
 
 
 
@@ -58,7 +54,11 @@ toggleHeart();
 
 }
 
-
+if(document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded",dom)
+} else{
+  dom();
+}
 
 
 
