@@ -7,8 +7,8 @@
 
   
   // 2. fetch data from api
-  // TODO: should we do an if check here, to make sure we have `imgName`, `imgSrc` and `imgLikesCount`, before we attempt to fetch data
-  fetch(" http://localhost:3000/shoes/1")
+
+  fetch("https://raw.githubusercontent.com/Vera25-O/shoegame/main/db.json")
     .then(resp => resp.json())
     .then(imageDetails => {
 
@@ -17,7 +17,7 @@
       imgSrc.src = imageDetails.image;
       imgLikesCount.textContent = `${imageDetails.likes} likes`;
     })
-})() // IIFE - https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+})() 
 
 
 // like button 
