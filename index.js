@@ -1,4 +1,4 @@
-(function renderImageAndDetails() {
+function renderImageAndDetails() {
   // 1. get a reference to elements on page
   // TODO: should these elements have default content like image, text, etc?
   const imgName = document.getElementById('image-name')
@@ -7,18 +7,19 @@
 
   
   // 2. fetch data from api
-
   fetch("https://raw.githubusercontent.com/Vera25-O/shoegame/main/db.json")
-    .then(resp => resp.json())
-    .then(imageDetails => {
+    .then((resp) => resp.json())
+    .then((imageDetails) => {
+      imageDetails.shoes.forEach((element)=>{
+      imgName.textContent = element.name;
+      imgSrc.src = element.image;
+      imgLikesCount.textContent = `${element.likes} likes`;
 
-      // render data on elements
-      imgName.textContent = imageDetails.name;
-      imgSrc.src = imageDetails.image;
-      imgLikesCount.textContent = `${imageDetails.likes} likes`;
+  
     })
-})() 
-
+}) 
+}
+renderImageAndDetails();
 
 // like button 
 function dom() {
